@@ -1,0 +1,18 @@
+# GOOD: keep secrets and dangerous leftovers out of the repo.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+.aws/
+*service-account*.json
+*.tfstate
+*.tfstate.*
+*.bak
+*~
+*.swp
+.netrc
+.pgpass
+.git-credentials

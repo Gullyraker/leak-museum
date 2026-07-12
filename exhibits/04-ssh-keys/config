@@ -1,0 +1,8 @@
+# ANTIPATTERN: SSH client config committed, leaking internal hostnames and users.
+Host prod
+  HostName prod-01.internal.example.com
+  User deploy
+  IdentityFile ~/.ssh/id_ed25519
+Host db-bastion
+  HostName 10.0.3.14
+  User root

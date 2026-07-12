@@ -1,0 +1,12 @@
+# ANTIPATTERN: a CI workflow that hardcodes tokens and echoes secrets to logs.
+name: deploy
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: AKIAIOSFODNN7EXAMPLE
+      AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+    steps:
+      - run: echo "Deploying with token ghp_EXAMPLEonlyDEMOtokenDONOTUSE0000000"
+      - run: env   # ANTIPATTERN: dumps every secret into the build log

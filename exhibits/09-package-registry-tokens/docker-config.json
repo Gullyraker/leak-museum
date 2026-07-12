@@ -1,0 +1,6 @@
+{
+  "_comment": "ANTIPATTERN: ~/.docker/config.json with a base64 registry auth committed.",
+  "auths": {
+    "registry.example.com": { "auth": "ZGVwbG95OlMzY3IzdFIwMHQ=" }
+  }
+}

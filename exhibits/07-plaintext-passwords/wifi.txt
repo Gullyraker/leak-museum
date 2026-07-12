@@ -1,0 +1,3 @@
+ANTIPATTERN: office Wi-Fi credentials in the repo.
+SSID: example-office-5G
+Password: letmein2026

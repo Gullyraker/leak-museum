@@ -1,0 +1,4 @@
+<?php
+// ANTIPATTERN: an editor/backup leftover (.bak) that still contains the secret you thought you removed.
+$db_pass = "S3cr3tR00t";
+$stripe  = "sk_test_EXAMPLEonly_not_a_real_key_000";

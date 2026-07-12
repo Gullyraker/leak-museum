@@ -1,0 +1,8 @@
+# ANTIPATTERN (meta): this .gitignore looks like it protects secrets, but every
+# rule is commented out or wrong, so nothing is actually ignored. A .gitignore
+# only helps if it is correct AND added before the secret is first committed.
+# See good-example/.gitignore for one that works.
+
+# .env            <- commented out, so .env is NOT ignored
+# *.key           <- commented out
+secret/           <- wrong: the secrets here are not under a secret/ directory

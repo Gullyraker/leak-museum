@@ -1,0 +1,3 @@
+# ANTIPATTERN: known_hosts committed, revealing internal infrastructure.
+prod-01.internal.example.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEXAMPLEdemoHOSTKEYdonotuse
+10.0.3.14 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEXAMPLEdemoBASTIONkeydonotuse
