@@ -1,0 +1,4 @@
+This HS256 token is signed with the secret "secret". Crack it and you can mint
+{"role":"admin"} tokens for anyone:
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAwMDAwMDAwfQ.zEEjm9fiJ42AHbfoI53srL9Ilni50I7-P0T6yhgHoeY

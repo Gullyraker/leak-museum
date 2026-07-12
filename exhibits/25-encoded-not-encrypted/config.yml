@@ -1,0 +1,5 @@
+# ANTIPATTERN: "hidden" password that is only base64-encoded (reversible, no key).
+database:
+  # echo -n 'S3cr3tR00t' | base64  ->  UzNjcjN0UjAwdA==
+  password_b64: UzNjcjN0UjAwdA==
+api_url: "https://api.example.com/?auth=dXNlcjpwYXNz"  # base64 of user:pass in the URL

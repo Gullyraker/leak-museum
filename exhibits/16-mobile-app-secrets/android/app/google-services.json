@@ -1,0 +1,5 @@
+{
+  "_comment": "ANTIPATTERN: Firebase config committed. The api_key is a Google API key; with lax Firebase rules it grants backend read/write.",
+  "project_info": { "project_id": "demo-project-do-not-use" },
+  "client": [{ "api_key": [{ "current_key": "AIzaEXAMPLE_not_a_real_google_key" }] }]
+}

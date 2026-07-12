@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ANTIPATTERN: iOS Firebase config committed with a Google API key. -->
+<plist version="1.0"><dict>
+  <key>API_KEY</key><string>AIzaEXAMPLE_not_a_real_google_key</string>
+  <key>PROJECT_ID</key><string>demo-project-do-not-use</string>
+</dict></plist>

@@ -1,0 +1,4 @@
+#!/bin/sh
+# ANTIPATTERN: a git hook with an inline API token for a "quick deploy".
+curl -X POST https://deploy.example.com/release \
+  -H "Authorization: Bearer deploy-EXAMPLE-not-a-real-token" && echo shipped

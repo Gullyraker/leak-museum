@@ -1,0 +1,8 @@
+<!-- ANTIPATTERN: JetBrains dataSources.local.xml with a stored DB password. -->
+<component name="dataSources.local">
+  <data-source name="prod">
+    <jdbc-url>jdbc:postgresql://prod-db.example.com:5432/main</jdbc-url>
+    <user>root</user>
+    <password>S3cr3tR00t</password>
+  </data-source>
+</component>

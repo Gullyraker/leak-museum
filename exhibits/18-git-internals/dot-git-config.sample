@@ -1,0 +1,5 @@
+# ANTIPATTERN: a token embedded in a git remote URL, saved into .git/config in plaintext.
+# (named dot-git-config.sample so it is visible and not a live .git/config)
+[remote "origin"]
+	url = https://deploy:ghp_EXAMPLEonlyDEMOtokenDONOTUSE0000000@github.com/acme/app.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

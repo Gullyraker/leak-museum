@@ -39,6 +39,18 @@ see how many of the planted secrets they catch (see [`PLANTED.md`](./PLANTED.md)
 | 12 | [dangerous-leftovers](./exhibits/12-dangerous-leftovers) | `.bash_history`, `.swp`, `.bak` |
 | 13 | [dockerfile](./exhibits/13-dockerfile) | Secrets in `ENV`/`ARG`/`COPY .env` |
 | 14 | [still-in-history](./exhibits/14-still-in-history) | "I deleted it" — but git history keeps it |
+| 15 | [frontend-bundle](./exhibits/15-frontend-bundle) | Secrets in the JS bundle + source map |
+| 16 | [mobile-app-secrets](./exhibits/16-mobile-app-secrets) | Firebase config + signing keystore |
+| 17 | [jwt-weak-secret](./exhibits/17-jwt-weak-secret) | JWT signed with a weak/known secret |
+| 18 | [git-internals](./exhibits/18-git-internals) | Token in `.git/config` / a git hook |
+| 19 | [editor-ide-settings](./exhibits/19-editor-ide-settings) | `.vscode` / JetBrains connection strings |
+| 20 | [dotnet-appsettings](./exhibits/20-dotnet-appsettings) | `appsettings.json` secrets |
+| 21 | [rails-secrets](./exhibits/21-rails-secrets) | `master.key` + `secrets.yml` |
+| 22 | [wordpress-wp-config](./exhibits/22-wordpress-wp-config) | `wp-config.php` creds + salts |
+| 23 | [ansible-vault](./exhibits/23-ansible-vault) | Vault blob + committed weak password |
+| 24 | [cloud-cli-cache](./exhibits/24-cloud-cli-cache) | Cached `gh`/`gcloud` session tokens |
+| 25 | [encoded-not-encrypted](./exhibits/25-encoded-not-encrypted) | base64 mistaken for encryption |
+| 26 | [api-debug-artifacts](./exhibits/26-api-debug-artifacts) | HAR / Postman / `.http` with live auth |
 
 The [`good-example/`](./good-example) directory shows the same project done
 right, and [`DO-THIS-INSTEAD.md`](./DO-THIS-INSTEAD.md) is the checklist.

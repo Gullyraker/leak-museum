@@ -1,0 +1,3 @@
+### ANTIPATTERN: a REST-client scratch file with a hardcoded bearer token.
+GET https://api.example.com/admin
+Authorization: Bearer admin-EXAMPLE-not-a-real-token
