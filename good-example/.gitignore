@@ -16,3 +16,6 @@ id_ed25519
 .netrc
 .pgpass
 .git-credentials
+# AI/MCP tool configs: commit only with ${VAR} references, never literal keys
+claude_desktop_config.json
+.cursor/mcp.json

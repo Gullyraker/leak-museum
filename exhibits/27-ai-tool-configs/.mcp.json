@@ -1,0 +1,27 @@
+{
+  "_comment": "ANTIPATTERN: a project-scoped MCP config (designed to be committed and shared) with literal API keys in every env block.",
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_EXAMPLEonlyDEMOtokenDONOTUSE0000000"
+      }
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "BSAEXAMPLE-not-a-real-brave-key-000000"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://admin:hunter2@db.internal:5432/prod"
+      ]
+    }
+  }
+}

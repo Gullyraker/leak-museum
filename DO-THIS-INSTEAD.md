@@ -5,7 +5,9 @@ The opposite of every exhibit, in one place.
 ## Keep secrets out of git
 - `.gitignore` the dangerous paths from commit one: `.env`, `*.pem`, `*.key`,
   `id_rsa`, `id_ed25519`, `.aws/`, `*service-account*.json`, `*.tfstate`,
-  `.netrc`, `.pgpass`, `.git-credentials`, `*.bak`, `*~`, `*.swp`.
+  `.netrc`, `.pgpass`, `.git-credentials`, `*.bak`, `*~`, `*.swp`,
+  `claude_desktop_config.json`, `.cursor/mcp.json` (unless it holds only
+  `${VAR}` references).
 - Commit a `.env.example` with names and empty values — never the real `.env`.
 - Read secrets from environment variables or a secret manager at runtime.
 

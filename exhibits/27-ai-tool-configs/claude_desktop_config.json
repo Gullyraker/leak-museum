@@ -1,0 +1,27 @@
+{
+  "_comment": "ANTIPATTERN: a Claude Desktop config copied into the repo 'so the team has the same setup', carrying every key it was ever configured with.",
+  "mcpServers": {
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "server-perplexity-ask"],
+      "env": {
+        "PERPLEXITY_API_KEY": "pplx-EXAMPLEdummyPERPLEXITYkeyDONOTUSE00000000"
+      }
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-EXAMPLE-demo-token-not-a-real-slack-token",
+        "SLACK_TEAM_ID": "T00000000"
+      }
+    },
+    "agent-tools": {
+      "command": "node",
+      "args": ["./tools/agent.js"],
+      "env": {
+        "ANTHROPIC_API_KEY": "sk-ant-api03-EXAMPLEdummyANTHROPICkeyDONOTUSE0000000000000000"
+      }
+    }
+  }
+}

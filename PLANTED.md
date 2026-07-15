@@ -33,6 +33,7 @@ value below is fake (documented example, throwaway demo key, or placeholder).
 | 24 | cloud-cli-cache | `gho_` GitHub token, `ya29.` Google refresh token (mangled) |
 | 25 | encoded-not-encrypted | base64-encoded credentials, creds in a URL |
 | 26 | api-debug-artifacts | Bearer tokens / cookies in a HAR, Postman + `.http` keys |
+| 27 | ai-tool-configs | Anthropic + OpenAI keys (mangled), GitHub PAT, Slack token, Brave + Perplexity keys, DB URL in MCP `env` blocks |
 
 ## Provider tokens deliberately mangled (so this repo can be published)
 
@@ -40,7 +41,8 @@ Because printemps-tokyo enforces GitHub push protection org-wide, provider value
 that GitHub detects with high confidence are kept in a broken form (prefix
 preserved, structure broken) so regex-based scanners still match but the push is
 allowed: Stripe (`sk_test_`/`sk_live_`), Slack (`xoxb-`), Google (`AIza`/`ya29.`),
-GitHub (`ghp_`/`gho_`), Azure Storage `AccountKey`. The "scanner-invisible"
+GitHub (`ghp_`/`gho_`), Azure Storage `AccountKey`, OpenAI (`sk-proj-`),
+Anthropic (`sk-ant-api03-`). The "scanner-invisible"
 exhibits (17, 21, 22) are the strongest teaching cases: no scanner flags them,
 proving a scanner is not a safety net.
 
